@@ -1,0 +1,382 @@
+*{
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: conic-gradient(from 63deg, #070103 53deg 38deg, #252424 48deg 180deg, #070103 180deg 233deg, #181818 138deg 360deg);
+    perspective: 500px;
+    perspective-origin: top;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.frame{
+    position: relative;
+    top: -70px;
+    width: 1000px;
+    height: 500px;
+    background-size: cover;
+    transform: translateZ(-100px);
+}
+
+iframe{
+    position: absolute;
+    width: 1000px;
+    height: 500px;
+    background-size: cover;
+}
+
+.slider{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(20px);
+    border-bottom: 10px solid white;
+    transition: all 5s ease;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.sign_board{
+    position: absolute;
+    left: 20px;
+    top: 280px;
+    width: 80px;
+    height: 25px;
+    background-color: #008B54;
+    color: rgba(255, 255, 255, 0.6);
+    text-align: center;
+    font-size: 20px;
+    transform-style: preserve-3d;
+    transform: rotateY(60deg);
+}
+
+.sign_board i {
+    margin-top: 2px;
+    transform: rotate(-90deg);
+}
+
+/* door */
+.door{
+    position: absolute;
+    left: 0px;
+    bottom: 30px;
+    width: 100px;
+    height: 350px;
+    box-shadow: 5px 40px 1px 1px rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+    background-color: #808C97;
+    transform-style: preserve-3d;
+    transform: rotateY(60deg);
+}
+.door_border{
+    background-color: #c0c0c0;
+    width: 3px;
+    height: 100px;
+    box-shadow: 140px 10px 8px 10px rgba(0, 0, 0, 0.8);
+}
+
+.door_border::after{
+    position: absolute;
+    content: "";
+    background-color: #c0c0c0;
+    left: 98px;
+    width: 5px;
+    height: 350px;
+}
+.door_border::before{
+    position: absolute;
+    content: "";
+    background-color: #c0c0c0;
+    top: -38px;
+    left: 58px;
+    width: 5px;
+    height: 80px;
+    rotate: 90deg;
+}
+
+.door_window1{
+    position: absolute;
+    top: 40px;
+    left: 20px;
+    width: 30px;
+    height: 75px;
+    border: 4px solid #fff;
+    border-style: groove;
+    background-color: #808C97;
+}
+.door_window2{
+    position: absolute;
+    top: 40px;
+    left: 60px;
+    width: 30px;
+    height: 75px;
+    border: 4px solid #fff;
+    border-style: groove;
+    background-color: #808C97;
+}
+
+.door_window3{
+    position: absolute;
+    top: 180px;
+    left: 20px;
+    width: 30px;
+    height: 75px;
+    border: 4px solid #fff;
+    border-style: groove;
+    background-color: #808C97;
+}
+
+.door_window4{
+    position: absolute;
+    top: 180px;
+    left: 60px;
+    width: 30px;
+    height: 75px;
+    border: 4px solid #fff;
+    border-style: groove;
+    background-color: #808C97;
+}
+
+/* sofa */
+.sofa{
+    position: absolute;
+    bottom: 50px;
+    background-color: red;
+    width: 150px;
+    height: 75px;
+    perspective: 600px;
+    transform-style: preserve-3d;
+}
+.sofa:nth-child(2){
+    position: absolute;
+    bottom: 50px;
+    background-color: red;
+    width: 150px;
+    height: 75px;
+    perspective: 600px;
+    transform-style: preserve-3d;
+    transform: translateZ(-50px) translateY(20px);
+}
+.sofa:nth-child(3){
+    position: absolute;
+    bottom: 50px;
+    background-color: red;
+    width: 150px;
+    height: 75px;
+    perspective: 600px;
+    transform-style: preserve-3d;
+    transform: translateZ(-100px) translateY(40px);
+}
+.sofa:nth-child(4){
+    position: absolute;
+    bottom: 50px;
+    background-color: red;
+    width: 150px;
+    height: 75px;
+    perspective: 600px;
+    transform-style: preserve-3d;
+    transform: translateZ(-150px) translateY(60px);
+}
+.sofa:nth-child(5){
+    position: absolute;
+    bottom: 50px;
+    background-color: red;
+    width: 150px;
+    height: 75px;
+    perspective: 600px;
+    transform-style: preserve-3d;
+    transform: translateZ(-50px) translateY(20px) translateX(200px);
+}
+.sofa:nth-child(6){
+    position: absolute;
+    bottom: 50px;
+    background-color: red;
+    width: 150px;
+    height: 75px;
+    perspective: 600px;
+    transform-style: preserve-3d;
+    transform: translateZ(-100px) translateY(40px) translateX(200px);
+}
+.sofa:nth-child(7){
+    position: absolute;
+    bottom: 50px;
+    background-color: red;
+    width: 150px;
+    height: 75px;
+    perspective: 600px;
+    transform-style: preserve-3d;
+    transform: translateZ(-150px) translateY(60px) translateX(200px);
+}
+.sofa:nth-child(8){
+    position: absolute;
+    bottom: 50px;
+    background-color: red;
+    width: 150px;
+    height: 75px;
+    perspective: 600px;
+    transform-style: preserve-3d;
+    transform: translateZ(0px) translateY(0px) translateX(200px);
+}
+.sofa:nth-child(9){
+    position: absolute;
+    bottom: 50px;
+    background-color: red;
+    width: 150px;
+    height: 75px;
+    perspective: 600px;
+    transform-style: preserve-3d;
+    transform: translateZ(-50px) translateY(20px) translateX(400px);
+}
+.sofa:nth-child(10){
+    position: absolute;
+    bottom: 50px;
+    background-color: red;
+    width: 150px;
+    height: 75px;
+    perspective: 600px;
+    transform-style: preserve-3d;
+    transform: translateZ(-100px) translateY(40px) translateX(400px);
+}
+.sofa:nth-child(11){
+    position: absolute;
+    bottom: 50px;
+    background-color: red;
+    width: 150px;
+    height: 75px;
+    perspective: 600px;
+    transform-style: preserve-3d;
+    transform: translateZ(-150px) translateY(60px) translateX(400px);
+}
+.sofa:nth-child(12){
+    position: absolute;
+    bottom: 50px;
+    background-color: red;
+    width: 150px;
+    height: 75px;
+    perspective: 600px;
+    transform-style: preserve-3d;
+    transform: translateZ(0px) translateY(0px) translateX(400px);
+}
+.sofa:nth-child(13){
+    position: absolute;
+    bottom: 50px;
+    background-color: red;
+    width: 150px;
+    height: 75px;
+    perspective: 600px;
+    transform-style: preserve-3d;
+    transform: translateZ(-50px) translateY(20px) translateX(-200px);
+}
+.sofa:nth-child(14){
+    position: absolute;
+    bottom: 50px;
+    background-color: red;
+    width: 150px;
+    height: 75px;
+    perspective: 600px;
+    transform-style: preserve-3d;
+    transform: translateZ(-100px) translateY(40px) translateX(-200px);
+}
+.sofa:nth-child(15){
+    position: absolute;
+    bottom: 50px;
+    background-color: red;
+    width: 150px;
+    height: 75px;
+    perspective: 600px;
+    transform-style: preserve-3d;
+    transform: translateZ(-150px) translateY(60px) translateX(-200px);
+}
+.sofa:nth-child(16){
+    position: absolute;
+    bottom: 50px;
+    background-color: red;
+    width: 150px;
+    height: 75px;
+    perspective: 600px;
+    transform-style: preserve-3d;
+    transform: translateZ(0px) translateY(0px) translateX(-200px);
+}
+.sofa:nth-child(17){
+    position: absolute;
+    bottom: 50px;
+    background-color: red;
+    width: 150px;
+    height: 75px;
+    perspective: 600px;
+    transform-style: preserve-3d;
+    transform: translateZ(-50px) translateY(20px) translateX(-400px);
+}
+.sofa:nth-child(18){
+    position: absolute;
+    bottom: 50px;
+    background-color: red;
+    width: 150px;
+    height: 75px;
+    perspective: 600px;
+    transform-style: preserve-3d;
+    transform: translateZ(-100px) translateY(40px) translateX(-400px);
+}
+.sofa:nth-child(19){
+    position: absolute;
+    bottom: 50px;
+    background-color: red;
+    width: 150px;
+    height: 75px;
+    perspective: 600px;
+    transform-style: preserve-3d;
+    transform: translateZ(-150px) translateY(60px) translateX(-400px);
+}
+.sofa:nth-child(20){
+    position: absolute;
+    bottom: 50px;
+    background-color: red;
+    width: 150px;
+    height: 75px;
+    perspective: 600px;
+    transform-style: preserve-3d;
+    transform: translateZ(0px) translateY(0px) translateX(-400px);
+}
+.right{
+    position: absolute;
+    background-color: #fff;
+    width: 25px;
+    height: 75px;
+    transform: translateX(138px) translateZ(-10px) rotateY(90deg);
+}
+.left{
+    position: absolute;
+    background-color: #fff;
+    width: 25px;
+    height: 75px;
+    transform: translateX(-12px) translateZ(-10px) rotateY(90deg);
+}
+.back{
+    position: absolute;
+    background-color: black;
+    width: 160px;
+    height: 75px;
+    transform: translateZ(-50px) translateX(-5px) translateY(30px);
+}
+
+.get_value{
+    position: absolute;
+    left: 20px;
+    top: 30px;
+    width: 20px;
+    height: 20px;
+    background-color: #030303;
+    color: #030303;
+    transform-style: preserve-3d;
+    transform: rotateY(60deg);
+}
+
+

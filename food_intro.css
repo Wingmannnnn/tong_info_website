@@ -1,0 +1,546 @@
+/* --- body ---*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to right, #bf79ce 0%, #e77dbb 20%, #d6db98 80% , #e482bb 109%, #a170ad 100%);
+}
+
+.head{
+    width: 100%;
+    height: 10%;
+}
+
+/* ---show food name--- */
+@keyframes show_food_line{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: .7;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.food_line1{
+    position: absolute;
+    top: 275px;
+    left: 520px;
+    width: 90px;
+    height: 5px;
+    background-color: #fff;
+    transition: all .5s;
+    animation: show_food_line 1s;
+}
+.food_line1::before{
+    content: "";
+    position: absolute;
+    top: -66px;
+    left: 90px;
+    width: 50px;
+    height: 5px;
+    background-color: #fff;
+    transition: all 1.5s;
+    animation: show_food_line 2s;
+}
+.food_line1::after{
+    content: "";
+    position: absolute;
+    top: -33px;
+    left: 55px;
+    width: 70px;
+    height: 5px;
+    transform: rotate(90deg);
+    background-color: #fff;
+    transition: all 1s;
+    animation: show_food_line 1.5s;
+}
+.food_line2{
+    position: absolute;
+    top: 275px;
+    left: 1040px;
+    width: 90px;
+    height: 5px;
+    background-color: #fff;
+    transition: all .5s;
+    animation: show_food_line 1s;
+}
+.food_line2::before{
+    content: "";
+    position: absolute;
+    top: -66px;
+    left: 90px;
+    width: 50px;
+    height: 5px;
+    background-color: #fff;
+    transition: all 1.5s;
+    animation: show_food_line 2s;
+}
+.food_line2::after{
+    content: "";
+    position: absolute;
+    top: -33px;
+    left: 55px;
+    width: 70px;
+    height: 5px;
+    transform: rotate(90deg);
+    background-color: #fff;
+    transition: all 1s;
+    animation: show_food_line 1.5s;
+}
+.food_line3{
+    position: absolute;
+    top: 330px;
+    left: 1290px;
+    width: 90px;
+    height: 5px;
+    background-color: #fff;
+    transition: all .5s;
+    animation: show_food_line 1s;
+}
+.food_line3::before{
+    content: "";
+    position: absolute;
+    top: -66px;
+    left: 90px;
+    width: 50px;
+    height: 5px;
+    background-color: #fff;
+    transition: all 1.5s;
+    animation: show_food_line 2s;
+}
+.food_line3::after{
+    content: "";
+    position: absolute;
+    top: -33px;
+    left: 55px;
+    width: 70px;
+    height: 5px;
+    transform: rotate(90deg);
+    background-color: #fff;
+    transition: all 1s;
+    animation: show_food_line 1.5s;
+}
+.food_line4{
+    position: absolute;
+    top: 440px;
+    left: 280px;
+    width: 90px;
+    height: 5px;
+    background-color: #fff;
+    transition: all .5s;
+    animation: show_food_line 1s;
+}
+.food_line4::before{
+    content: "";
+    position: absolute;
+    top: -66px;
+    left: 90px;
+    width: 50px;
+    height: 5px;
+    background-color: #fff;
+    transition: all 1.5s;
+    animation: show_food_line 2s;
+}
+.food_line4::after{
+    content: "";
+    position: absolute;
+    top: -33px;
+    left: 55px;
+    width: 70px;
+    height: 5px;
+    transform: rotate(90deg);
+    background-color: #fff;
+    transition: all 1s;
+    animation: show_food_line 1.5s;
+}
+.food_line5{
+    position: absolute;
+    top: 460px;
+    left: 790px;
+    width: 90px;
+    height: 5px;
+    background-color: #fff;
+    transition: all .5s;
+    animation: show_food_line 1s;
+}
+.food_line5::before{
+    content: "";
+    position: absolute;
+    top: -66px;
+    left: 90px;
+    width: 50px;
+    height: 5px;
+    background-color: #fff;
+    transition: all 1.5s;
+    animation: show_food_line 2s;
+}
+.food_line5::after{
+    content: "";
+    position: absolute;
+    top: -33px;
+    left: 55px;
+    width: 70px;
+    height: 5px;
+    transform: rotate(90deg);
+    background-color: #fff;
+    transition: all 1s;
+    animation: show_food_line 1.5s;
+}
+.food_line6{
+    position: absolute;
+    top: 440px;
+    left: 1290px;
+    width: 90px;
+    height: 5px;
+    background-color: #fff;
+    transition: all .5s;
+    animation: show_food_line 1s;
+}
+.food_line6::before{
+    content: "";
+    position: absolute;
+    top: -66px;
+    left: 90px;
+    width: 50px;
+    height: 5px;
+    background-color: #fff;
+    transition: all 1.5s;
+    animation: show_food_line 2s;
+}
+.food_line6::after{
+    content: "";
+    position: absolute;
+    top: -33px;
+    left: 55px;
+    width: 70px;
+    height: 5px;
+    transform: rotate(90deg);
+    background-color: #fff;
+    transition: all 1s;
+    animation: show_food_line 1.5s;
+}
+.food_line7{
+    position: absolute;
+    top: 625px;
+    left: 520px;
+    width: 90px;
+    height: 5px;
+    background-color: #fff;
+    transition: all .5s;
+    animation: show_food_line 1s;
+}
+.food_line7::before{
+    content: "";
+    position: absolute;
+    top: -66px;
+    left: 90px;
+    width: 50px;
+    height: 5px;
+    background-color: #fff;
+    transition: all 1.5s;
+    animation: show_food_line 2s;
+}
+.food_line7::after{
+    content: "";
+    position: absolute;
+    top: -33px;
+    left: 55px;
+    width: 70px;
+    height: 5px;
+    transform: rotate(90deg);
+    background-color: #fff;
+    transition: all 1s;
+    animation: show_food_line 1.5s;
+}
+.food_line8{
+    position: absolute;
+    top: 625px;
+    left: 1040px;
+    width: 90px;
+    height: 5px;
+    background-color: #fff;
+    transition: all .5s;
+    animation: show_food_line 1s;
+}
+.food_line8::before{
+    content: "";
+    position: absolute;
+    top: -66px;
+    left: 90px;
+    width: 50px;
+    height: 5px;
+    background-color: #fff;
+    transition: all 1.5s;
+    animation: show_food_line 2s;
+}
+.food_line8::after{
+    content: "";
+    position: absolute;
+    top: -33px;
+    left: 55px;
+    width: 70px;
+    height: 5px;
+    transform: rotate(90deg);
+    background-color: #fff;
+    transition: all 1s;
+    animation: show_food_line 1.5s;
+}
+
+
+.seafood_name1{
+    position: absolute;
+    top: 220px;
+    left: 620px;
+    font-size: 25px;
+    color: #030303;
+    background-color: transparent;
+    transition: all .5s;
+    animation: show_food_line 1s;
+    font-weight: 600;
+}
+.seafood_name2{
+    position: absolute;
+    top: 220px;
+    left: 1150px;
+    font-size: 25px;
+    color: #030303;
+    background-color: transparent;
+    transition: all .5s;
+    animation: show_food_line 1s;
+    font-weight: 600;
+}
+.seafood_name3{
+    position: absolute;
+    top: 200px;
+    left: 1400px;
+    font-size: 25px;
+    color: #030303;
+    background-color: transparent;
+    transition: all .5s;
+    animation: show_food_line 1s;
+    font-weight: 600;
+}
+
+.seafood_name4{
+    position: absolute;
+    top: 380px;
+    left: 380px;
+    font-size: 25px;
+    color: #030303;
+    background-color: transparent;
+    transition: all .5s;
+    animation: show_food_line 1s;
+    font-weight: 600;
+}
+.seafood_name5{
+    position: absolute;
+    top: 400px;
+    left: 900px;
+    font-size: 25px;
+    color: #030303;
+    background-color: transparent;
+    transition: all .5s;
+    animation: show_food_line 1s;
+    font-weight: 600;
+}
+.seafood_name6{
+    position: absolute;
+    top: 380px;
+    left: 1400px;
+    font-size: 25px;
+    color: #030303;
+    background-color: transparent;
+    transition: all .5s;
+    animation: show_food_line 1s;
+    font-weight: 600;
+}
+.seafood_name7{
+    position: absolute;
+    top: 560px;
+    left: 620px;
+    font-size: 25px;
+    color: #030303;
+    background-color: transparent;
+    transition: all .5s;
+    animation: show_food_line 1s;
+    font-weight: 600;
+}
+.seafood_name8{
+    position: absolute;
+    top: 580px;
+    left: 1150px;
+    font-size: 25px;
+    color: #030303;
+    background-color: transparent;
+    transition: all .5s;
+    animation: show_food_line 1s;
+    font-weight: 600;
+}
+
+
+/* ---line--- */
+.line{
+    width: 100%;
+    height: 20%;
+    border-bottom: 10px solid saddlebrown;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+.line h2{
+    position: absolute;
+    bottom: -30px;
+    color: aliceblue;
+    letter-spacing: 2px;
+    padding-left: 30px;
+    margin-top: 20px;
+    font-size: 28px;
+}
+
+.top{
+    position: absolute;
+    top: 10%;
+}
+
+.middle{
+    position: absolute;
+    top: 35%;
+}
+
+.bottom{
+    position: absolute;
+    top: 60%;
+}
+
+/* ---tag--- */
+.tag{
+    position: absolute;
+    width: 20px;
+    height: 50px;
+    border-radius: 15px;
+    background-color: #fff;
+    transform: rotate(-15deg);
+    z-index: 2;
+    background-color: #C48C4F;
+}
+.top .tag.one{
+    top: 110px;
+    left: 520px;
+}
+
+.top .tag.two{
+    top: 110px;
+    left: 1050px;
+}
+
+.bottom .tag.one{
+    top: 110px;
+    left: 520px;
+}
+
+.bottom .tag.two{
+    top: 110px;
+    left: 1050px;
+}
+
+.tag.one{
+    top: 100px;
+    left: 290px;
+}
+.tag.two{
+    top: 120px;
+    left: 800px;
+}
+.tag.three{
+    top: 100px;
+    left: 1300px;
+}
+
+/* ---img--- */
+.food{
+    cursor: pointer;
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    transform: rotate(-15deg);
+
+    transition: all .5s;
+    box-shadow: 6px 6px 5px  rgba(25, 25, 21, 0.6);
+    background-size: cover;
+    z-index: 1;
+}
+.food:hover{
+    transform: rotate(0deg);
+    transform: translateX(-20px);
+
+}
+.food.seafood_one{
+    top: 150px;
+    left: 500px;
+    background-image: url("IMG/seafood1.jpg");
+}
+.food.seafood_two{
+    top: 150px;
+    left: 1030px;
+    background-image: url("IMG/tong_food.jpg");
+}
+
+.food.localfood_one{
+    top: 140px;
+    left: 270px;
+    background-image: url("IMG/food40.jpg");
+}
+.food.localfood_two{
+    top: 160px;
+    left: 780px;
+    background-image: url("IMG/food3.jpg");
+}
+
+.food.localfood_three{
+    top: 140px;
+    left: 1280px;
+    background-image: url("IMG/lin1.png");
+}
+.food.dessert_one{
+    top: 150px;
+    left: 500px;
+    background-image: url("IMG/bread3.png");
+}
+.food.dessert_two{
+    top: 150px;
+    left: 1030px;
+    background-image: url("IMG/ice1.jpg");
+}
+
+
+
+/* ---button--- */
+button{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin: 15px;
+    transition: all 0.5s;
+}
+
+button:hover i{
+ color: #9d4f85;
+}
+
+button i{
+    font-size: 40px;
+    color: rgb(249, 235, 235);
+}
+
+

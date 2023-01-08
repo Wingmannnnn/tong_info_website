@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>美食介紹</title>
+    <link rel="stylesheet" href="food_intro.css">
+    <link rel="stylesheet" href="card.css">
+    <script src="https://kit.fontawesome.com/d4b7a6da48.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="head">
+        <button id="prev_btn">
+            <i class="fas fa-arrow-circle-left"></i>
+        </button>
+    </div>
+                <!-- line -->
+    <div class="line top" id="Top_line">
+        <h2 id="h2h2">新鮮海產</h2>
+        <!-- <div class="food_line2" id="Food_name"></div> -->
+        <!-- <div class="seafood_name2">ji</div> -->
+        <div class="tag one"></div>
+        <div class="food seafood_one" id="Seafood_one"></div>
+        <div class="tag two"></div>
+        <div class="food seafood_two" id="Seafood_two"></div>
+    </div>
+    <div class="line middle">
+        <h2>在地小吃</h2>
+        <div class="tag one"></div>
+        <div class="food localfood_one" id="Localfood_one"></div>
+        <div class="tag two"></div>
+        <div class="food localfood_two" id="Localfood_two"></div>
+        <div class="tag three"></div>
+        <div class="food localfood_three" id="Localfood_three"></div>
+    </div>
+    <div class="line bottom">
+        <h2>螞蟻族甜食</h2>
+        <div class="tag one"></div>
+        <div class="food dessert_one" id="Dessert_one"></div>
+        <div class="tag two"></div>
+        <div class="food dessert_two" id="Dessert_two"></div>
+    </div>
+    <!-- card -->
+    <div class="container" id="Container">
+        <div class="top_card" id="Top_card">
+            <div class="circle"></div>
+            <div class="top_front" id="Top_front">
+                <div class="img1" id="Img1"></div>
+                <div class="img2" id="Img2"></div>
+                <div class="img3" id="Img3"></div>
+            </div>
+            <div class="top_back"></div>
+        </div>
+        <div class="bottom_card" id="Bottom_card">
+            <div class="bottom_front">
+                <ul>
+                    <li><h3 id="food_name">店名: 先天宮廟口六十年蚵嗲</h3></li>
+                    <li><a href="#" target="_blank" id="Link"><h3 id="address">地址: 嘉義市西區忠義街50號</h3></a></li>
+                    <li><h3 id="time">營業時間: 9:00~19:00</h3></li>
+                    <li><h3 id="phone">電話:暫無資料</h3></li>
+                    <li><h3 id="must_order">必點清單: 炸透抽、蚵仔煎</h3></li>
+                </ul>
+                <div class="button">
+                    <div class="close" id="Close">關閉卡片</div>
+
+                </div>
+            </div>
+            <div class="bottom_back"></div>
+        </div>
+    </div>
+
+    <script src="food_intro.js"></script>
+</body>
+</html>

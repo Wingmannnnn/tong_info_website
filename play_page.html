@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>東石蚵烤隊</title>
+    <link rel="stylesheet" href="play_page.css" />
+    <script src="https://kit.fontawesome.com/d4b7a6da48.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <!-- body -->
+    <div class="container" id="Container">
+      <div class="navbar">
+        <div class="menu">
+          <h3 class="logo"><span>蚵烤隊</span>教你玩</h3>
+          <div class="hamburger-menu" id="Hamburger_menu">
+            <div class="bar"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-container">
+            <!-- wave -->
+        <div class="wave"></div>
+        <div class="main">
+          <header>
+            <div class="overlay" id="Overlay">
+              <button id="prev_btn">
+                <i class="fas fa-arrow-circle-left">上一站</i>
+              </button>
+              <button id="next_btn">
+                <i class="fas fa-arrow-circle-right"><span class="arrow_word">下一站</span></span></i>
+              </button>
+                <div class="road" id="Road"></div>
+                <div class="bus_stop one" id="Busstop1" tabindex="1">
+                    <div class="board_back"></div>
+                    <div class="board_top">
+                        <h1>牛港魚池吃到飽</h1>
+                    </div>
+                    <div class="column"></div>
+                    <div class="sign">第一站</div>
+                </div>
+                <div class="bus_stop two" id="Busstop2" tabindex="2">
+                    <div class="board_back"></div>
+                    <div class="board_top">
+                        <h1>東石水中古厝</h1>
+                    </div>
+                    <div class="column"></div>
+                    <div class="sign">第二站</div>
+                </div>
+                <div class="bus_stop three" id="Busstop3">
+                    <div class="board_back"></div>
+                    <div class="board_top">
+                        <h1 id="Word1">東石漁人碼頭</h1>
+                    </div>
+                    <div class="column"></div>
+                    <div class="sign">第三站</div>
+                </div>
+                <div class="bus_stop four" id="Busstop4">
+                    <div class="board_back"></div>
+                    <div class="board_top">
+                        <h1 id="Word2">白水湖壽島</h1>
+                    </div>
+                    <div class="column"></div>
+                    <div class="sign">第四站</div>
+                </div>
+                <div class="bus_stop five" id="Busstop5">
+                    <div class="board_back"></div>
+                    <div class="board_top">
+                        <h1>鰲鼓溼地北堤</h1>
+                    </div>
+                    <div class="column"></div>
+                    <div class="sign">第五站</div>
+                </div>
+                <div class="bus_stop six" id="Busstop6">
+                    <div class="board_back"></div>
+                    <div class="board_top"></div>
+                    <div class="column"></div>
+                    <div class="sign">Home</div>
+                </div>
+                <div class="car">
+                    <div class="member one"></div>
+                    <div class="member two"></div>
+                    <div class="member three"></div>
+                    <div class="member four"></div>
+                    <div class="member five"></div>
+                    <div class="member six"></div>
+                    <img src="https://cdn.pixabay.com/photo/2016/03/31/20/29/bus-1295804_1280.png" width="200px">
+                </div>
+                <!-- <div class="add_content">
+                  <div class="close" id="Close">X</div>
+                    <h3 class="info_title">大家若來到東石白水湖壽島，一定要小心上去堤岸的路上</br>會有兩塊大石頭堵住，只有一台機車的空間可以通過，尤</br>其是在黃昏夕陽的時間點，此處會位於陽光直射的方向</br>直接讓你失明，稍有不慎就會發生上面同學的慘案!!!</h3>
+                    <div class="img_list2"></div>
+                    <div class="img_list3"></div>
+                </div> -->
+                <!-- <div class="dialogue">
+                    <h2>小檸檬</h2>
+                    <hr/>
+                    <p>牛港魚池吃到飽，只要花200就可以鮮蚵吃到飽喔!!<br/>
+                      吃飽後就繼續跟著蚵烤隊教你東石趴趴走~
+                    </p>
+                    <div class="precaution">觀看影片</div>
+                    <div class="pass">跳過</div>
+                </div>
+                <div class="npc"></div> -->
+            </div>
+          </header>
+        </div>
+
+        <!-- shadow -->
+        <div class="shadow one" id="Shadow_one"></div>
+        <div class="shadow two" id="Shadow_two"></div>
+        <div class="shadow three" id="Shadow_three"></div>
+      </div>
+
+      <!-- links -->
+      <div class="links">
+        <ul>
+          <li style="--i: 0.05s;" id="Menu_home">Home</li>
+          <li style="--i: 0.1s;" id="Menu_science">景點推薦</li>
+          <li style="--i: 0.15s;" id="Menu_food">美食推薦</li>
+          <li style="--i: 0.2s;" id="Menu_play">蚵烤隊教你玩</li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="play_page.js"></script>
+  </body>
+</html>
